@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-
 import { Image, View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';

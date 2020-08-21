@@ -1,14 +1,14 @@
-import { INIT_APPLICATION } from '../actions/application.actions'
-import manifest from '../../../app.json'
+import { INIT_APPLICATION } from '../actions/application.actions';
+import manifest from '../../../app.json';
 
 const {
     expo: { name, version },
-} = manifest
+} = manifest;
 
 const initialState = {
     status: false,
     version: -1,
-}
+};
 
 const applicationReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -17,13 +17,13 @@ const applicationReducer = (state = initialState, action) => {
                 status: true,
                 version,
                 name,
-            }
+            };
         }
 
         default: {
-            return state
+            return state;
         }
     }
-}
+};
 
-export default applicationReducer
+export default applicationReducer;
